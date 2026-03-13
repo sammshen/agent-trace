@@ -43,6 +43,7 @@
     // and so on...
     {
         "role": "compaction",
+        "tag": "compaction_1",
         "tags_to_drop": ["user_query_1", "agent_response_1", "fs_search_1", "fs_search_2"],
         "replacement_content": "The user asked me to teach them about the stock market using only the files in the local file system and I found the files [FILE 1] and [FILE 2].",
         "prepend_or_append": "append" // append or prepend the replacement content to the conversation history

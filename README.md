@@ -15,4 +15,4 @@ Notes:
 - The `schema_example/arrivals.csv` specifies the frequency of tasks (not requests) coming into the system
     - An implicit assumption is that task frequency can be made orthogonal to the actual tasks themselves
 
-
+How the trace will be run can be seen in `trace_runner.py`
