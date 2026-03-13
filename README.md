@@ -1,3 +1,5 @@
+# Schema Design
+
 The schema of this trace is designed to be run for inference benchmarking. This means that we are sending requests directly to an LLM instead of to an agentic application. The target metrics to be optimized are inference metrics like TTFT and throughput (tok/s).
 
 This means that the tool calls (and everything in the agent harness) are not meant to be executed. Furthermore, the actual responses from the LLM are not processed and the conversation history accumulates according to the trace deterministically. 

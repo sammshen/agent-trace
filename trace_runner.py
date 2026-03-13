@@ -21,7 +21,7 @@ run_trajectory():
                 return a future
         if role == "compaction":
             drop tags_to_drop
-            append replacement_content to conversation history (could be as a prefix!! or suffix)
+            append or prepend replacement_content to conversation history
             
 
 main():
