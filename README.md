@@ -10,7 +10,7 @@ Notes:
     - There are no timestamps inside of a task, the next request (to the LLM) will be sent once a response to the previous request arrives and all necessary tool calls have arrived
     - We will append the necessary tool call context before every request to the conversation
     - The `schema_example/trajectories.jsonl` is an example of a single trajectory trace of a dummy deep research / web task
-    - We also support conversation history **compaction** to specify a new reduced conversation history. The way this should be specified
+    - We also support conversation history **compaction** to specify a new reduced conversation history. You can specify to prepend or append the compacted prefix. 
     - We assume reasoning / CoT is not added to the conversation history
 - The `schema_example/arrivals.csv` specifies the frequency of tasks (not requests) coming into the system
     - An implicit assumption is that task frequency can be made orthogonal to the actual tasks themselves

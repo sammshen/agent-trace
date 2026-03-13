@@ -28,7 +28,9 @@ main():
     arguments: 
     1. trace.jsonl
     2. arrivals.csv (zero offset it if needed)
+    take the minimum len
 
-    for each arrival time in arrivals.csv:
+    for i in min_len:
         spawn a process to run the next trajectory
+        sleep(arrival[i] - arrival[i-1])
 """
