@@ -1,0 +1,2 @@
+[{"pre_gap_ms": 0, "total_input_length": 64, "output_length": 16, "hash_ids": [111, 222]}, {"pre_gap_ms": 200, "total_input_length": 128, "output_length": 32, "hash_ids": [111, 222, 333, 444]}, {"pre_gap_ms": 100, "total_input_length": 96, "output_length": 16, "hash_ids": [111, 555]}]
+[{"pre_gap_ms": 0, "total_input_length": 32, "output_length": 8, "hash_ids": [999]}, {"pre_gap_ms": 500, "total_input_length": 64, "output_length": 16, "hash_ids": [999, 888]}]
