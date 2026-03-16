@@ -9,7 +9,7 @@ The trace format (see `example_trace.jsonl`) handles these with:
 2. The `comes_after` field allows requests to not be purely serialized (e.g. request 2 and request 3 can both come after request 1 instead of request 3 having to come after request 2). 
 3. The `full_request_with_conversation_history` field allows editing conversation history on a per-request basis easily and also helps manage subagent contexts. 
 
-`traces/trace_runner.py` reads a trace file and replays it against a serving endpoint. each trajectory is one agent session — a sequence of requests where each depends on previous responses via the `comes_after` DAG. the gap between requests (`pre_gap_ms`) simulates tool execution time.
+`trace_runner.py` reads a trace file and replays it against a serving endpoint. each trajectory is one agent session — a sequence of requests where each depends on previous responses via the `comes_after` DAG. the gap between requests (`pre_gap_ms`) simulates tool execution time.
 
 each request carries `full_request_with_conversation_history` — the complete prompt text sent to the model, including all prior conversation context.
 
@@ -20,7 +20,7 @@ uv pip install openai transformers
 ```
 
 ```
-python traces/trace_runner.py \
+python trace_runner.py \
     --trace-file traces/example_trace.jsonl \
     --model-name meta-llama/Llama-3.2-1B-Instruct \
     --port 8234
